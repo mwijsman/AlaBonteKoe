@@ -1,0 +1,302 @@
+Technisch Ontwerp
+ALA – De Bonte Koe
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+Maarten Wijsman
+4-9-2015
+1.0
+ 
+
+Inhoudsopgave
+
+
+1 Samenvatting	3
+2 Plan van aanpak	4
+3 Ontwikkelomgeving	5
+4 Specificaties van de interface	6
+6 Beveiliging en onderhoud	8
+7 Slotconclusie	9
+ 
+
+1 Samenvatting
+
+1.1 Samenvatting voor de klant
+Dit document omvat de rapportage over de fase Technisch Ontwerp van De bonte koe. Alle
+hoofdonderdelen alsmede conclusies en aanbevelingen zijn verwerkt in dit totaaloverzicht,
+met eventuele verwijzingen naar separate uitgebreide documenten, die gedurende deze fase
+zijn opgesteld.
+
+1.2 Versiebeheer
+Versie 	Status 	Datum 	Auteur 	Opmerkingen
+0.1	Concept 	11-09	M.Wijsman	Begonnen aan de Technisch ontwerp.
+1.0	Compleet	30-09	M.Wijsman	Technisch Ontwerp afgerond.
+X.X				
+X.X				
+
+1.3 Verzendlijst
+Dit document wordt ter beschikking gesteld aan:
+Rick van Koppen - MD
+Maarten Wijsman – MD
+Cyndi Strooband – MD
+Wouter Spruit – MD
+Ben Wolthuis – AO
+Shivam Akloe - AO
+
+
+ 
+2 Plan van aanpak
+
+2.1 Op te leveren producten
+Ontwikkelen van applicatie Restaurant en Uitgaan voor Bontekoe
+Logo CodeIT
+Alle documentatie die je richting je klant stuurt (FO / TO / Rapport informatiebehoefte) zal verstuurt
+worden vanuit CodeIT. Je dient dus voor CodeIT een logo te ontwikkelen met bijbehorend briefpapier.
+
+Functioneel Ontwerp, Technisch Ontwerp en Rapport Informatiebehoefte
+•Wireframes
+•Een zelf te ontwerpen huisstijl voor De Bonte Koe
+•UML diagrammen
+•Entiteit relatie diagram
+•Data dictionary
+
+responsive webapplicatie
+•Home
+•Menukaart
+
+Bij uitgaanscentrum De Bonte Koe:
+•80’s en 90’s Area
+•Schuurfeest Area
+•Urban Area
+
+Implementatieplan en acceptatietest
+
+Ontwikkelen van Bioscoop applicatie voor Bontekoe
+Functioneel Ontwerp, Technisch Ontwerp en Rapport Informatiebehoefte
+•Wireframes
+•Een zelf te ontwerpen huisstijl voor De Bonte Koe
+•UML diagrammen
+•Entiteit relatie diagram
+•Data dictionary
+
+Ontwikkelen responsive webapplicatie
+
+Implementatieplan en acceptatietest
+
+2.2 Planning
+Stap 1: Logo CodeIT
+Alle documentatie die je richting je klant stuurt (FO / TO / Rapport informatiebehoefte) zal verstuurt
+worden vanuit CodeIT. Je dient dus voor CodeIT een logo te ontwikkelen met bijbehorend briefpapier.
+Stap 2: Functioneel Ontwerp, Technisch Ontwerp en Rapport Informatiebehoefte
+Aan de hand van de eisen van de opdrachtgever, welke achterin dit document zijn opgenomen, dien
+je een Functioneel Ontwerp, Technisch Ontwerp en een Rapport Informatiebehoefte op te stellen.
+Denk hierbij aan opnemen van:
+•Wireframes
+•Een zelf te ontwerpen huisstijl voor De Bonte Koe
+•UML diagrammen
+•Entiteit relatie diagram
+•Data dictionary
+Stap 3: Ontwikkelen responsive webapplicatie
+1) Ontwikkel de module restaurant
+In de module restaurant worden de volgende pagina’s aangeboden.
+•Home
+•Menukaart
+Wil je meer? Ontwikkel dan ook de module reserveren.
+2) Ontwikkel de module uitgaan
+Bij uitgaanscentrum De Bonte Koe zijn drie discozalen aanwezig.
+•80’s en 90’s Area
+•Schuurfeest Area
+•Urban Area
+Je ontwikkelt, aan de hand van de goedgekeurde documenten, in OOP PHP volgens het MVC-model
+een responsive webapplicatie. Daar waar mogelijk maak je gebruik van Symfony versie 2.0 (met
+behulp van Twig). Je maakt gebruik van HTML 5.0, CSS 3.0 en JavaScript (jQuery). Probeer in het
+design echt te laten zien wat je in huis hebt!
+Uiteraard maak je voor het testen van de webapplicatie een testplan en laat je de testen door een
+aantal externe uitvoeren.
+tap 4: Implementatieplan en acceptatietest
+Denk na over hoe de webapplicatie binnen de organisatie geïmplementeerd kan worden en maak
+hiervoor de benodigde documenten. Nadat de implementatie (fictief) heeft plaatsgevonden, dien je
+een acceptatietest op te stellen.
+Stap 5: Wijzigingen acceptatietest doorvoeren
+Klanten, ze zijn ook nooit tevreden. Uit de acceptatietest zijn een aantal wijzigingen gekomen. Voer
+deze wijzigingen door. Tevens maak je documentatie over hoe je de data veilig kunt stellen
+(beveiliging en het back-upbeleid).	 
+
+3 Ontwikkelomgeving
+
+3.1 De technische infrastructuur
+
+Zoals het al in eerdere documenten is beschreven, wordt dit een webbased applicatie. We kiezen hiervoor omdat het een lichte website moet zijn dat, in het eerste instantie, alleen maar informatie moet geven en een reserveringsformulier moet behandelen.
+
+Een grote server met maximaal 1TB en werkgeheugen(8GB minimaal) zijn de minimale eisen voor de website. Om alle reserveringen en uitbreidingen qua eigen producten  zalen op te vangen, is dit nodig. Ook moet er ruimte zijn om er eventueel een back-up op te zetten.
+
+
+3.2 programmeertaal / ontwikkeltool
+
+Programmeertaal:
+We gebruiken hiervoor:
+-	HTML
+-	CSS
+-	PHP (OOP)
+-	SQL
+-	Symfony
+
+Benodigde hard- software:
+Wij zessen gebruiken allen een laptop met ons eigen editor erop. 
+Wat betreft versiebeheer is er altijd een controle en een notificatie voordat we het op de mail zetten.
+Hooguit wat we nog nodig hebben is stabiel internet.
+
+ 
+4 Specificaties van de interface
+
+4.1 Interface
+
+ 
+
+Homescherm van De Bonte Koe. Vanaf hier kan je kiezen uit één van de drie categorieën.
+
+ 
+ 
+
+Homescherm van het restaurant module. Je kan hier kiezen om de menukaart te zien of om te reserveren.
+Klik je op een foto hier, dan wordt je doorgelinkt naar de menukaart. 
+De headers verwijzen door naar hun desbetreffende pagina’s
+
+
+
+
+ 
+
+Uitleg van het restaurant.
+
+Hieronder 4 schermen dat uitlegt hoe de menukaart wordt weergeven.
+Elke keer als je op een tabje klikt, klapt het uit.
+
+ 
+ 
+ 
+ 
+
+
+
+
+ 
+
+
+Reserveringsformulier. 
+Reserveringsnaam: Hier wordt de naam opgegeven voor de reservering. Je kan alleen letters gebruiken. Max ruimte om hierin te typen is 50.
+
+E-mailadres: Hier wordt de e-mailadres opgegeven om een bevestigingsmail naartoe te sturen. Hier kunnen letters, nummers en speciale tekens gebruikt worden. Max ruimte om hierin te typen is 50.
+
+Aantal Personen: Op dit veld kan je opgeven met hoeveel personen je langs komt. Hier kan je alleen nummers invoegen. Max ruimte is 2.
+
+Selecteer datum: Kalender om een dag uit te kiezen.
+Selecteer aankomsttijd: spreekt voor zichzelf. Hiervoor wordt een tijd inputveld gebruikt.
+Opmerking-vak: Hierin kan je notificaties achter laten voor de werknemers als u iets speciaals erbij wilt hebben. Letters, nummers en speciale tekens mogen gebruikt worden. Max ruimte is 150.
+
+Wanneer je op bevestigen klikt, wordt een email gestuurd naar het opgegeven e-mailadres en naar de emailadres van DBK.
+
+ 
+
+Homescherm van de uitgaansmodule. Hier kan je informatie vinden over de zalen en openingstijden. Als je klikt op 1 van de foto’s, wordt je doorgelinkt naar de desbetreffende zaal. De tabs erboven verwijzen ook naar de zalen.
+
+ 
+
+Volledige info over de regelementen qua de zalen.
+
+
+Hieronder alle 3 de schermen voor de 3 zalen.
+ 
+ 
+ 
+ 
+5 Specificatie van de database
+
+5.1 Specificaties van de database
+
+
+Tabel reservering is gemaakt om de reserveringen van het restaurant in op te slaan. Hieronder vind je specifieke informatie over de tabel en de bijbehorende attributen.
+
+Id: Functioneert als de Primary Key voor het tabel reservering. Datatype is Integer(6). / Not Null
+Naam: Datatype is Varchar(50) / Not Null
+Email: Datatype is Varchar(50) / Not Null
+aantalPersonen: Datatype is Integer(2) / Not Null
+Datum: Datatype is Date / Not Null
+Tijd: Datatype is Time / Not Null
+			     Opmerking: Datatype is Text / Nullable
+
+Tabel users functioneert als een inlogtabel om users op te slaan. Hieronder vind je specifieke informatie over de tabel en de bijbehorende attributen.
+
+Id: Functioneert als de Primary Key voor het tabel reservering. Datatype is Integer(6). / Not Null
+Naam: Datatype is Varchar(50) / Not Null
+			    Wachtwoord: Datatype is Varchar(50) / Not Null
+
+Tabel menukaart is gemaakt om de producten in de menukaart op te slaan. De redenen om hiervoor een tabel te maken is om de mogelijkheid aan te bieden om meer producten toe te voegen, bijwerken of te verwijderen. Hieronder vind je specifieke informatie over de tabel en de bijbehorende attributen.
+
+Id: Functioneert als de Primary Key voor het tabel reservering. Datatype is Integer(6). / Not Null
+Type: Hierin wordt aangegeven of het om een voorgerecht, hoofdgerecht, nagerecht of drank gaat. Datatype is Varchar(30) / Not Null
+		  Naam: Datatype is Varchar(50) / Not Null
+		  Prijs: Datatype is Decimal(3,2) / Not Null
+		  Foto: Datatype is Blob / Not Null
+
+Tabel zalen is gemaakt om de informatie en foto’s op te slaan. De redenen om hiervoor een tabel te maken is om de mogelijkheid aan te bieden om meer zalen toe te voegen, bijwerken of te verwijderen. Hieronder vind je specifieke informatie over de tabel en de bijbehorende attributen.
+
+Id: Functioneert als de Primary Key voor het tabel reservering. Datatype is Integer(6). / Not Null
+Naam: Datatype is Varchar(50) / Not Null
+		  Tekst: Datatype is Text / Not Null
+		  Foto: Datatype is Blob / Not Null
+
+5.2 De grootte van de database
+Onze verwachting is dat de tabel reservering het snelst zal opvullen. Daarom willen we een regel implementeren dat het reserveringen van een week oud verwijdert. Hiermee kunnen we ruimtecontrole uitvoeren. Hierdoor zal er geen vraag ontstaan voor extra ruimte.
+
+De andere tabellen zullen niet al te veel input krijgen, maar om het zekere voor het onzekere te nemen, wordt er wel een grote server met extra ruimte gevraagd.
+
+Geschatte ruimte verbruik per tabel:
+
+Reservering ~1GB +/-
+Users ~1MB +/-
+Menukaart ~450MB +/-
+Zalen ~400MB +/-
+
+Gevraagde Server Specificatie:
+
+HDD: 1TB
+RAM: 8GB Minimaal.
+
+
+
+ 
+6 Beveiliging en onderhoud
+
+6.1 Beveiliging
+
+De klant kan alleen informatie vinden en reserveren.
+In het reserveringsformulier wordt alleen een specifieke format van input verwacht. Waar nummers toegevoegd moeten worden, kan ook alleen maar nummers gekozen worden tot het de bepaalde grootte van de database bereikt. Zelfde geldt ook voor tekstvelden, kalenders en tijden. 
+
+We kunnen apart nog een functie maken voor het uitvoeren van een back-up. Maar dat moet nog nagevraagd worden bij de klant. Ook moet het besproken worden met het team.
+
+6.2 Beheer
+Hierover is al merendeels duidelijk geworden in hoofdstuk 5.2 .
+Onze verwachting is dat de tabel reservering het snelst zal opvullen. Daarom willen we een regel implementeren dat het reserveringen van een week oud verwijdert.
+
+
+7 Slotconclusie
+
+7.1 Verantwoording 
+
+Nog geen problemen ontdekt.
+
+7.2 Brondocumentatie 
+PDF – Programma van eisen
+Rapport Informatiebehoefte
+Functioneel Ontwerp
